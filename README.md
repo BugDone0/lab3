@@ -9,7 +9,7 @@
 | Компонент | CVE (Или аналог) | CVS |
 | --------- | -----------------| ---- |
 | com.fasterxml.jackson.core:jackson-databind:2.9.10.5 | CVE-2020-24616 | 8.1 (CVSS 3.1)
-| | |
+| commons-io:commons-io:2.0 | sonatype-2018-0705 | 7.8 (CVSS 3)
 | | |
 # Сборка
 * windows: `gradlew.bat build`

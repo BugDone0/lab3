@@ -13,7 +13,7 @@
 | | CVE-2020-25649 | 7.5 (CVSS 3) |
 | commons-io:commons-io:2.0 | sonatype-2018-0705 | 7.8 (CVSS 3) |
 | org.apache.tomcat.embed:tomcat-embed-core:9.0.39 | CVE-2020-17527 | 7.5 (CVSS 3.1)
-| | |
+| com.google.guava:guava:24.0-jre | CVE-2018-10237 | 5.9 (CVSS 3.1)
 | | |
 | | |
 | | |

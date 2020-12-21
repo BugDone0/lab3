@@ -33,7 +33,7 @@
 | | CVE-2013-4152 | 6.8 | 2.0
 | | CVE-2014-0054 | 6.8 | 2.0
 | | CVE-2016-1000027 | 9.8 | 3.1 |
-| | |
+| org.springframework.boot:spring-boot:2.0.0.M6 | CWE-79 | 6.1 | 3.0 |
 
 # Сборка
 * windows: `gradlew.bat build`

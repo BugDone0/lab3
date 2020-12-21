@@ -7,6 +7,9 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven {
+        url = 'https://repo.spring.io/milestone'
+    }
 }
 
 dependencies {
@@ -15,9 +18,8 @@ dependencies {
     implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version:'9.0.39'
     implementation group: 'com.google.guava', name: 'guava', version: '24.0-jre'
     implementation group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
-    implementation group: 'org.springframework', name: 'spring-core', version: '3.0.5.RELEASE'
     implementation group: 'org.springframework', name: 'spring-web', version: '3.0.5.RELEASE'
-    implementation group: 'org.springframework', name: 'spring-context', version: '3.0.5.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.0.M6'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.+'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.+'

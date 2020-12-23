@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonatype.gradle.plugins.scan" version "2.0.0"
 }
 
 group 'net.rgsu.baranyuk.diploma'
@@ -15,6 +16,31 @@ dependencies {
 
 subprojects {
     task allDependencies(type: DependencyReportTask) {}
+}
+
+/** sonartype audit properties */
+ossIndexAudit {
+    final def SONARTYPE_LOGIN_VARIABLE_NAME = "SONARTYPE_LOGIN"
+    final def SONARTYPE_PSWD_VARIABLE_NAME = "SONARTYPE_PASSWORD"
+    final def SONARTYPE_LOGIN = findProperty(SONARTYPE_LOGIN_VARIABLE_NAME)
+    final def SONARTYPE_PASSWORD = findProperty(SONARTYPE_PSWD_VARIABLE_NAME)
+    if(SONARTYPE_LOGIN != null && SONARTYPE_PASSWORD != null) {
+        // Only if both set
+        username = SONARTYPE_LOGIN
+        password = SONARTYPE_PASSWORD
+        project.logger.info "Credentials for sonartype is set using login: $SONARTYPE_LOGIN)}"
+    } else {
+        project.logger.warn """
+Login[$SONARTYPE_LOGIN_VARIABLE_NAME] and/or password[$SONARTYPE_PSWD_VARIABLE_NAME] property does not set. 
+Swithing to anonymos request.
+Be awaire that anonymos requests quantity is restricted by sonartype.
+"""
+    }
+    allConfigurations = false // if true includes the dependencies in all resolvable configurations. By default is false, meaning only 'compileClasspath' and 'releaseCompileClasspath' are considered
+    useCache = true // true by default
+    colorEnabled = true // if true prints vulnerability description in color. By default is true.
+    dependencyGraph = true // if true prints dependency graph showing direct/transitive dependencies. By default is false.
+    showAll = true // if true prints all dependencies. By default is false, meaning only dependencies with vulnerabilities will be printed.
 }
 
 

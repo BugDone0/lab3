@@ -52,7 +52,25 @@
 | | CVE-2014-0114 | 7.5 | 2.0
 | | CVE-2019-10086 | 7.3 | 3.1
 
-
+# Запуск проверки зависимостей по базе Oss Index
+## Запуск
+* windows: `gradlew.bat ossIndexAudit`
+* unix: `./gradlew ossIndexAudit`
+## Дополнительная конфигурация
+По-умолчанию запросы к базе будут совершаться анонимно. Число анонимных запросов ограничено.
+Предусмотрена конфигурация учетной записи для совершения запросов.
+### Конфигурации из файла
+Для совершения авторизованных запросов в файле `%PROJECTDIR%/gradle.properties` необходимо заполнить переменные `SONARTYPE_LOGIN` и `SONARTYPE_PASSWORD` логином и паролем от учетной записи в https://ossindex.sonatype.org/ соотв.
+Привер заполненного файла gradle.properties
+```
+#SONARTYPE_LOGIN=myemail@mail.com
+#SONARTYPE_PASSWORD=secretpassword123
+```
+### Конфигурация параметрами командной строки
+При запуске проверки необходимо передать параметры `SONARTYPE_LOGIN` и `SONARTYPE_PASSWORD` с логином и паролем от учетной записи в https://ossindex.sonatype.org/ соотв.
+Пример запуска:
+* windows: `gradlew.bat ossIndexAudit -PSONARTYPE_LOGIN="myemail@mail.com" -PSONARTYPE_PASSWORD="secretpassword123"`
+* unix: `./gradlew ossIndexAudit -PSONARTYPE_LOGIN="myemail@mail.com" -PSONARTYPE_PASSWORD="secretpassword123"`
 
 # Сборка
 * windows: `gradlew.bat build`

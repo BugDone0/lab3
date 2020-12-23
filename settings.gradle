@@ -1,2 +1,4 @@
 rootProject.name = 'vulnerable-app'
+include 'submodule-isolation-1'
+include 'submodule-isolation-2'
 

@@ -52,7 +52,13 @@
 | | CVE-2014-0114 | 7.5 | 2.0
 | | CVE-2019-10086 | 7.3 | 3.1
 
+# Подготовка BOM для dependency-track
+Запуск команды:
+* windows: `gradlew.bat cyclonedxBom`
+* unix: `./gradlew cyclonedxBom`
 
+bom-файл будет находится в директории `build/reports/bom.xml`,
+готовый к загрузки в на dependency-track сервер
 
 # Сборка
 * windows: `gradlew.bat build`

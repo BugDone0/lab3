@@ -57,8 +57,10 @@
 * windows: `gradlew.bat cyclonedxBom`
 * unix: `./gradlew cyclonedxBom`
 
-bom-файл будет находится в директории `build/reports/bom.xml`,
-готовый к загрузки в на dependency-track сервер
+bom-файлы будут находится в директориях `%submodule%/build/reports/bom.xml`,
+готовые к загрузки в на dependency-track сервер
+
+**Каждый модуль необходимо загружать отдельно**, поскольку dependency-track забирает только максимальную версию зависимости
 
 # Сборка
 * windows: `gradlew.bat build`

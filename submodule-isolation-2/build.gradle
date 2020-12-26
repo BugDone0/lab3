@@ -1,6 +1,7 @@
 plugins {
     id 'java'
 }
+apply(plugin: "org.cyclonedx.bom")
 
 group 'net.rgsu.baranyuk.diploma'
 version '1.0-SNAPSHOT'

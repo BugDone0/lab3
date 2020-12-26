@@ -52,7 +52,11 @@
 | | CVE-2014-0114 | 7.5 | 2.0
 | | CVE-2019-10086 | 7.3 | 3.1
 
-
+# OWASP-dependency-check
+Документация: https://jeremylong.github.io/DependencyCheck/dependency-check-gradle/index.html
+Запуск:
+* windows: `gradlew.bat dependencyCheckAggregate ` 
+* unix: `./gradlew dependencyCheckAggregate `
 
 # Сборка
 * windows: `gradlew.bat build`

@@ -10,18 +10,11 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    project(":submodule-isolation-1")
-    project(":submodule-isolation-1")
+    project("submodule-isolation-1")
+    project("submodule-isolation-1")
 }
 
 subprojects {
     task allDependencies(type: DependencyReportTask) {}
 }
-
-jar {
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
-
 

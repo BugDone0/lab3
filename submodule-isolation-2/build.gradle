@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'war'
 }
 
 group 'net.rgsu.baranyuk.diploma'
@@ -13,4 +14,10 @@ dependencies {
     implementation group: 'commons-io', name: 'commons-io', version: '2.0'
     implementation group: 'org.springframework', name: 'spring-web', version: '3.0.5.RELEASE'
     implementation group: 'org.apache.struts', name: 'struts-taglib', version: '1.3.10' // Vulnerabilities listed in nvd has wrong version with includes 1* but actually is part of struct2 ecosystem
+}
+
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }

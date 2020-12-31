@@ -31,13 +31,16 @@
 | | CVE-2013-1624 | 4.0 | 2.0
 | | CVE-2016-1000346 | 3.7 | 3.0
 | | CVE-2015-6644 | 3.3 | 3.0
-| org.springframework:spring-web:3.0.5 | 
+| | CVE-2020-26939 | 5.3 | 3.1
+| org.springframework:spring-web:3.0.5.RELEASE | 
 | | CVE-2020-5398 | 7.5 | 3.1 |
 | | CVE-2014-0225 | 8.8 | 3.0
 | | CVE-2013-4152 | 6.8 | 2.0
 | | CVE-2014-0054 | 6.8 | 2.0
 | | CVE-2016-1000027 | 9.8 | 3.1 |
-| org.springframework.boot:spring-boot:2.0.0.M6 | CWE-79 | 6.1 | 3.0 |
+| org.springframework.boot:spring-boot:2.0.0.M6 
+| | CWE-79 | 6.1 | 3.0 |
+| | CVE-2018-1196 | 5.9 | 3.0
 |org.apache.struts:struts2-core:2.3.30
 | | CVE-2017-5638 | 10.0 | 3.0 |
 | | CVE-2018-11776 | 9.8 | 3.0 |
@@ -46,8 +49,20 @@
 | | CVE-2017-9805 | 8.1 | 3.1 |
 | | CVE-2017-9787 | 7.5 | 3.1 |
 | | CVE-2018-1327 | 7.5 | 3.1 |
+| | CVE-2017-12611 | 9.8 | 3.0
+| | CVE-2020-17530 | 9.8 | 3.1
+| | CVE-2019-0233 | 7.5 | 3.1
+| | CVE-2019-0230 | 9.8 | 3.1
+| | CVE-2017-9804 | 7.5 | 3.0
+| | CVE-2017-9793 | 7.5 | 3.0
 | commons-fileupload:commons-fileupload:1.3.2 | CVE-2016-1000031 | 9.8 | 3.1 |
-| org.apache.struts:struts-core:1.3.10 | CVE-2012-1007 | 4.5 | 2.0
+| org.apache.struts:struts-core:1.3.10 
+| | CVE-2012-1007 | 4.5 | 2.0
+| | CVE-2014-0114 | 7.5 | 2.0
+| | CVE-2012-1007 | 4.3 | 2.0
+| | CVE-2015-0899 | 7.5 | 3.0
+| | CVE-2016-1181 | 8.1 | 3.0
+| | CVE-2016-1182 | 8.2 | 3.0
 | commons-beanutils:commons-beanutils:1.8.0 
 | | CVE-2014-0114 | 7.5 | 2.0
 | | CVE-2019-10086 | 7.3 | 3.1

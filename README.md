@@ -13,7 +13,9 @@
 | | CVE-2020-25649 | 7.5 | 3.0
 | commons-io:commons-io:2.0 | sonatype-2018-0705 | 7.8 | 3.0
 | org.apache.tomcat.embed:tomcat-embed-core:9.0.39 | CVE-2020-17527 | 7.5 | 3.1
-| com.google.guava:guava:24.0-jre | CVE-2018-10237 | 5.9 | 3.1
+| com.google.guava:guava:24.0-jre 
+| | CVE-2018-10237 | 5.9 | 3.1
+| | CVE-2020-8908 | 3.3 | 3.1
 | org.bouncycastle:bcprov-jdk16:1.46 
 | | CVE-2018-1000613 | 9.8 | 3.0
 | | CVE-2018-5382 | 9.8 | 3.0

@@ -29,7 +29,7 @@ subprojects {
 }
 
 dependencyCheck {
-    formats = ['csv', 'html']
+    formats = ['csv', 'html','xml']
 }
 
 

@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "4.4.1.3373"
 }
 
 group 'net.rgsu.baranyuk.diploma'
@@ -7,6 +8,14 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+sonar {
+  properties {
+    property "sonar.projectKey", "BugDone0_lab3"
+    property "sonar.organization", "bugdone0"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 
 dependencies {
     project("submodule-isolation-1")

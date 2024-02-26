@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id "org.sonarqube" version "5.0.1.3006"
+    id "org.sonarqube" version "3.3"
 }
 
 group 'net.rgsu.baranyuk.diploma'
